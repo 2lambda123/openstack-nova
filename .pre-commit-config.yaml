@@ -21,7 +21,7 @@ repos:
       - id: check-yaml
         files: .*\.(yaml|yml)$
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.4
+    rev: v1.5.5
     hooks:
       - id: remove-tabs
         exclude: '.*\.(svg)$'
@@ -31,8 +31,8 @@ repos:
       - id: hacking
         additional_dependencies: []
         exclude: '^(doc|releasenotes|tools)/.*$'
-  - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.4
+  - repo: https://github.com/hhatto/autopep8
+    rev: v2.1.0
     hooks:
       - id: autopep8
         files: '^.*\.py$'
@@ -42,7 +42,7 @@ repos:
     - id: codespell
       args: ['--ignore-words=doc/dictionary.txt']
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.7.1
+    rev: v1.9.0
     hooks:
       - id: mypy
         additional_dependencies:
